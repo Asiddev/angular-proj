@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   username = '';
   allowSubmit = true;
+  clicked = false;
 
   constructor() {}
 
