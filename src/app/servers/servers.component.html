@@ -8,5 +8,14 @@
 </button>
 <p>YOUR USERNAME : {{ username }}</p>
 
-<button (click)="clicked = !clicked">Display Details</button>
+<!-- <button (click)="clicked = !clicked">Display Details</button> -->
+<button (click)="onToggleDetails()">Display Details</button>
 <p [ngClass]="{ toggleDisplay: clicked === true }">Secret Password = Tuna</p>
+
+<div
+  *ngFor="let item of logs"
+  [ngStyle]="{ backgroundColor: item >= 5 ? 'blue' : 'transparent' }"
+  [ngClass]="{ whiteFont: item >= 5 }"
+>
+  {{ item }}
+</div>

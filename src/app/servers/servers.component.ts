@@ -9,6 +9,12 @@ export class ServersComponent implements OnInit {
   username = '';
   allowSubmit = true;
   clicked = false;
+  logs = [];
+
+  onToggleDetails() {
+    this.clicked = !this.clicked;
+    this.logs.push(this.logs.length + 1);
+  }
 
   constructor() {}
 

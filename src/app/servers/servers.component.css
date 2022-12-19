@@ -1,3 +1,7 @@
 .toggleDisplay {
   display: none;
 }
+
+.whiteFont {
+  color: white;
+}
