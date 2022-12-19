@@ -13,7 +13,7 @@ export class ServersComponent implements OnInit {
 
   onToggleDetails() {
     this.clicked = !this.clicked;
-    this.logs.push(this.logs.length + 1);
+    this.logs.push(new Date());
   }
 
   constructor() {}

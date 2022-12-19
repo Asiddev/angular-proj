@@ -13,9 +13,9 @@
 <p [ngClass]="{ toggleDisplay: clicked === true }">Secret Password = Tuna</p>
 
 <div
-  *ngFor="let item of logs"
-  [ngStyle]="{ backgroundColor: item >= 5 ? 'blue' : 'transparent' }"
-  [ngClass]="{ whiteFont: item >= 5 }"
+  *ngFor="let item of logs; let i = index"
+  [ngStyle]="{ backgroundColor: i > 4 ? 'blue' : 'transparent' }"
+  [ngClass]="{ whiteFont: i > 4 }"
 >
   {{ item }}
 </div>
